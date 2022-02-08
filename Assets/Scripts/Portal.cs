@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Portal : MonoBehaviour
 {
     [SerializeField] int _nextMapId;
+    [SerializeField] string _areaTransitionName;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class Portal : MonoBehaviour
         if (other.tag == "Player")
         {
             SceneManager.LoadScene(_nextMapId);
+            PlayerController.instance.areaTransitionName = _areaTransitionName;
         }
     }
 }

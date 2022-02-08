@@ -361,6 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ca18e99e16b8c043be27670718a8908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  areaTransitionName: 
 --- !u!212 &827725071
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -399,8 +400,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1315017409
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -1466609764, guid: 59f90efa2622f2f4ca653dec78584214, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -421,7 +422,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827725067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.815, y: 0.397, z: 0}
+  m_LocalPosition: {x: -3.76, y: 0.397, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -455,6 +456,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1145662906, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
+      propertyPath: areaTransitionName
+      value: camp-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1145662907, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07
+      objectReference: {fileID: 0}
     - target: {fileID: 8618016041562495160, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -498,6 +507,10 @@ PrefabInstance:
     - target: {fileID: 8618016041562495160, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618016041562495162, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
+      propertyPath: _areaTransitionName
+      value: spawn-1
       objectReference: {fileID: 0}
     - target: {fileID: 8618016041562495165, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
       propertyPath: m_Name

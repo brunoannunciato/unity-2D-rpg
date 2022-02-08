@@ -343,8 +343,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8618016041562495162, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
-      propertyPath: _nextMapId
-      value: 0
+      propertyPath: _areaTransitionName
+      value: camp-1
       objectReference: {fileID: 0}
     - target: {fileID: 8618016041562495165, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
       propertyPath: m_Name

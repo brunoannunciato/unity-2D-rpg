@@ -6,7 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D _body;
     float _speed = 5;
-    static PlayerController _instance;
+    public static PlayerController instance;
+    public string areaTransitionName;
     Animator _anim;
     // Start is called before the first frame update
     void Start()
@@ -16,9 +17,9 @@ public class PlayerController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
 
-        if (_instance == null)
+        if (instance == null)
         {
-            _instance = this;
+            instance = this;
         } else
         {
             Destroy(gameObject);
