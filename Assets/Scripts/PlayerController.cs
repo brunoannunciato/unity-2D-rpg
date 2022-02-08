@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D _body;
     float _speed = 5;
+    static PlayerController _instance;
     Animator _anim;
     // Start is called before the first frame update
     void Start()
@@ -13,6 +14,16 @@ public class PlayerController : MonoBehaviour
         _body = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
         DontDestroyOnLoad(gameObject);
+
+
+        if (_instance == null)
+        {
+            _instance = this;
+        } else
+        {
+            Destroy(gameObject);
+        }
+
     }
 
     // Update is called once per frame
