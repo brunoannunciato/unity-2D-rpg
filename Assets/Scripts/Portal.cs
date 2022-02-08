@@ -7,10 +7,11 @@ public class Portal : MonoBehaviour
 {
     [SerializeField] int _nextMapId;
     [SerializeField] string _areaTransitionName;
+    public EntranceMap entranceMap;
     // Start is called before the first frame update
     void Start()
     {
-        
+        entranceMap.areaTransitionName = _areaTransitionName;
     }
 
     // Update is called once per frame

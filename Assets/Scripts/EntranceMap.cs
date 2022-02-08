@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EntranceMap : MonoBehaviour
 {
-    [SerializeField] string areaTransitionName;
+    public string areaTransitionName;
     // Start is called before the first frame update
     void Start()
     {

@@ -207,6 +207,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &425597870 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1145662906, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
+  m_PrefabInstance: {fileID: 8618016039572715758}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 075484949f8131644b705fa7835bcde3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &509070769
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,11 +469,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1145662906, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
       propertyPath: areaTransitionName
-      value: camp-1
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1145662907, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.07
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: 8618016041562495160, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
       propertyPath: m_RootOrder
@@ -470,7 +481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618016041562495160, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.96
+      value: 10.79
       objectReference: {fileID: 0}
     - target: {fileID: 8618016041562495160, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -508,6 +519,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8618016041562495162, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
+      propertyPath: _nextMapId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618016041562495162, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
+      propertyPath: entranceMap
+      value: 
+      objectReference: {fileID: 425597870}
     - target: {fileID: 8618016041562495162, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
       propertyPath: _areaTransitionName
       value: spawn-1

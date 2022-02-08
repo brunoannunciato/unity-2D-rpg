@@ -207,6 +207,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &628108948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1145662906, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
+  m_PrefabInstance: {fileID: 769746106}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 075484949f8131644b705fa7835bcde3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &670617847
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,8 +354,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8618016041562495162, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
+      propertyPath: entranceMap
+      value: 
+      objectReference: {fileID: 628108948}
+    - target: {fileID: 8618016041562495162, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
       propertyPath: _areaTransitionName
-      value: camp-1
+      value: spawn-1
       objectReference: {fileID: 0}
     - target: {fileID: 8618016041562495165, guid: aa0f05ff2c245c44eb9fff44f41f9b2d, type: 3}
       propertyPath: m_Name
