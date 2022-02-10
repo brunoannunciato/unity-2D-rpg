@@ -9,12 +9,18 @@ public class CameraController : MonoBehaviour
     [SerializeField] Tilemap _map;
     Vector3 minBoundMap;
     Vector3 maxBoundMap;
+    
+    float halfWidth;
+    float halfHeight;
 
     Transform target;
     void Start()
     {
-        minBoundMap = _map.localBounds.min;
-        maxBoundMap = _map.localBounds.max;
+        halfHeight = Camera.main.orthographicSize;
+        halfWidth = halfHeight * Camera.main.aspect;
+
+        minBoundMap = _map.localBounds.min + new Vector3(halfWidth, halfHeight, 0);
+        maxBoundMap = _map.localBounds.max + new Vector3(-halfWidth, -halfHeight, 0);
 
         target = PlayerController.instance.transform;
         Debug.Log(target);
