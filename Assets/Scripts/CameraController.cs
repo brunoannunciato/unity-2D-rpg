@@ -22,6 +22,8 @@ public class CameraController : MonoBehaviour
         minBoundMap = _map.localBounds.min + new Vector3(halfWidth, halfHeight, 0);
         maxBoundMap = _map.localBounds.max + new Vector3(-halfWidth, -halfHeight, 0);
 
+        PlayerController.instance.setBounds(_map.localBounds.min, _map.localBounds.max);
+
         target = PlayerController.instance.transform;
         Debug.Log(target);
     }

@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
     public string areaTransitionName;
     Animator _anim;
+    Vector3 minBoundMap;
+    Vector3 maxBoundMap;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,5 +42,13 @@ public class PlayerController : MonoBehaviour
             _anim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             _anim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
         }
+
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, minBoundMap.x, maxBoundMap.x), Mathf.Clamp(transform.position.y, minBoundMap.y, maxBoundMap.y), transform.position.z);
+    }
+
+    public void setBounds(Vector3 minBound, Vector3 maxBound)
+    {
+        minBoundMap = minBound + new Vector3(.5f, .5f, 0);
+        maxBoundMap = maxBound + new Vector3(-.5f, -.5f, 0);
     }
 }
