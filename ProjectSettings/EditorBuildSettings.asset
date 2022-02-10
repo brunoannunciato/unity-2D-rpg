@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/camp.unity
     guid: 3eae37e28c43d8e4fb135af715cf9f33
+  - enabled: 1
+    path: Assets/Scenes/Cave_yard.unity
+    guid: 5b22c6fc7df41174fb6f663883545a40
+  - enabled: 1
+    path: Assets/Scenes/Town_Tower_Map.unity
+    guid: 0fd6507a77fa74c4b8bb3212f8b6384f
   m_configObjects: {}
