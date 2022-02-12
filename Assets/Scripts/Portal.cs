@@ -8,6 +8,9 @@ public class Portal : MonoBehaviour
     [SerializeField] int _nextMapId;
     [SerializeField] string _areaTransitionName;
     public EntranceMap entranceMap;
+    float timeToWaitForFade = 1.5f;
+    bool shouldWaitFade = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +20,17 @@ public class Portal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (shouldWaitFade == true)
+        {
+            timeToWaitForFade -= Time.deltaTime;
+            UiFade.instance.FadeToBlack();
+
+            if (timeToWaitForFade <= 0)
+            {
+                shouldWaitFade = false;
+                SceneManager.LoadScene(_nextMapId);
+            }
+        }
         
     }
 
@@ -25,7 +39,8 @@ public class Portal : MonoBehaviour
         Debug.Log(other);
         if (other.tag == "Player")
         {
-            SceneManager.LoadScene(_nextMapId);
+            shouldWaitFade = true;
+
             PlayerController.instance.areaTransitionName = _areaTransitionName;
         }
     }

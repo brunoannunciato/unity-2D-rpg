@@ -10,9 +10,10 @@ public class EntranceMap : MonoBehaviour
     {
         if (areaTransitionName == PlayerController.instance.areaTransitionName)
         {
-            Debug.Log("HITOU!");
             PlayerController.instance.transform.position = transform.position;
         }
+
+        UiFade.instance.FadeFromBlack();
     }
 
     // Update is called once per frame
